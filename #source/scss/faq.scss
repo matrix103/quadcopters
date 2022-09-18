@@ -1,0 +1,70 @@
+body{
+   font-family: 'Roboto', sans-serif;
+   background-color: #222224;
+}
+.faq-heading{
+   border-bottom: #FFFFFF;
+   padding: 20px 60px;
+}
+.faq-container{
+   padding: 100px 0 0 0;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   font-size: 16px;
+}
+.hr-line{
+ width: 60%;
+ margin: auto;
+ 
+}
+.faq-page {
+   color: #FFFFFF;
+   cursor: pointer;
+   padding: 30px 20px;
+   width: 80%;
+   border: none;
+   outline: none;
+   transition: 0.4s;
+   margin: auto;
+}
+.faq-body{
+   margin: auto;
+  width: 80%; 
+  padding: auto;
+  p{
+   padding: 20px 0;
+   color: #FFFFFF;
+  }
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+   background-color: #454545;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+   padding: 0 18px;
+   // background-color: #FFFFFF;
+   display: none;
+   overflow: hidden;
+}
+.faq-page:after {
+   content: '\02795';
+   /* Unicode character for "plus" sign (+) */
+   font-size: 13px;
+   color: #FFFFFF;
+   float: right;
+   margin-left: 5px;
+}
+.active:after {
+   content: "\2796";
+   /* Unicode character for "minus" sign (-) */
+}
+
+@media screen and (max-width: 800px){
+   .faq-page {
+      width: 90%;
+      padding: 30px 0px;
+   }
+}

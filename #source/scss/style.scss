@@ -1,0 +1,457 @@
+main{
+   background-color: #222224;
+}
+.intro{
+   font-family: 'Roboto', sans-serif;
+   width: 100%;
+   height: 100vh;
+   background: url('/img/mainPage/main/bg_intro.jpg') center/cover  no-repeat;
+	&__text{
+		position: relative;
+      top: 22%;
+      left: 10%;
+		width: 400px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+      &_mobile{
+         display: none;
+      }
+	}
+	&__title{
+		font-weight: 700;
+		font-size: 56px;
+		color: #FFFFFF;
+		line-height: 120%;
+		text-align: left;
+	}
+	&__subtitle{
+		font-size: 20px;
+		line-height: 150%;
+		color: #FFFFFF;
+		padding: 10px 0 50px 0;
+	}
+	&__button{
+		width: 100%;
+		height: 70px;
+		background: #ECECEC;
+      border-radius: 6px;
+		color: #000000;
+		font-size: 20px;
+		letter-spacing: 1px;
+      box-sizing: border-box;
+      &:hover{
+         background-color: rgb(186, 186, 186);
+      }
+      &_mobile{
+         display: none;
+      }
+	}
+}
+.benefits{
+   font-family: 'Roboto', sans-serif;
+   display: grid;
+   grid-template-columns: repeat(3, 260px);
+   grid-template-rows: repeat(2, 200px);
+   column-gap: 100px;
+   row-gap:  35px;
+   justify-content: center;
+
+   &__container{
+      padding: 50px 0 65px 0;
+      background: url('/img/mainPage/main/bg_benefits.png') center/cover  no-repeat;
+   }
+   &__item{
+      display: flex;
+      flex-direction: column;
+      // grid-area: item;
+      align-items: center;
+      padding: 24px 13px;
+
+      width: 260px;
+      height: 200px;
+      background: rgba(56, 57, 58, 0.6);
+      border: 1px solid rgba(255, 184, 0, 0.1);
+      border-radius: 16px;
+   }
+   img{
+      width: 67px;
+      height: 67px;
+   }
+   &__text{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 25px 0 0 0;
+   }
+}
+
+.catalog{
+   font-family: 'Roboto', sans-serif;
+   // background-color: #222224;
+   &__title{
+      font-weight: 700;
+		font-size: 42px;
+		color: #FFFFFF;
+		line-height: 120%;
+		text-align: center;
+      padding: 50px 0;
+   }
+   &__items{
+      
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-areas: 
+         "first first"
+         "secont third";
+      column-gap: 10px;
+      row-gap:  20px;
+      
+   }
+   &__item_1{
+      position: relative;
+      width: 100%;
+      height: 360px;
+      grid-area: first;
+      background: url('/img/mainPage/catalog/item_1.jpg') center/auto  no-repeat;
+      &:hover{
+         background-size: cover;    
+      }
+   }
+   &__item_2{
+      position: relative;
+      width: 100%;
+      height: 360px;
+      grid-area: secont;
+      transition: all 0.5s;
+      background: url('/img/mainPage/catalog/item_2.jpg') center/auto  no-repeat;
+      &:hover{
+         background-size: cover;
+      }
+   }
+   &__item_3{
+      position: relative;
+      width: 100%;
+      height: 360px;
+      grid-area: third;
+      transition: all 0.5s;
+      background: url('/img/mainPage/catalog/item_3.jpg') center/auto no-repeat;
+      &:hover{
+         background-size: cover;
+      }
+   }
+   img{
+      width: 100%;
+      height: 360px;
+   }
+   &__name{
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 60px;
+
+      color: #FFFFFF;
+   }
+}
+
+.top-product{
+   font-family: 'Roboto', sans-serif;
+   display: flex;
+   width: 80%;
+   margin: 0 auto;
+   flex-direction: column;
+   align-items: center;
+   // background-color: #222224;
+   &__title{
+      font-weight: 700;
+		font-size: 42px;
+		color: #FFFFFF;
+		line-height: 120%;
+		text-align: center;
+      padding: 80px 0 50px 0;
+   }
+   &__subtitle{
+      font-weight: 700;
+		font-size: 42px;
+		font-weight: 400;
+      font-size: 32px;
+      color: #CFCFCF;
+      text-align: center;
+   }
+   &__circle{
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      position: absolute;
+   }
+   &__img{
+      padding: 100px 0 0 0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   img{
+      width: 800px;
+      height: 450px;
+      z-index: 100;
+      transition: all 0.5s;
+      &:hover{
+         width: 820px;
+         height: 470px;
+      }
+   }
+   &__button{
+      margin: 80px 0 100px 0;
+      width: 350px;
+		height: 70px;
+		background: #ECECEC;
+      border-radius: 6px;
+		color: #000000;
+		font-size: 20px;
+		letter-spacing: 1px;
+      box-sizing: border-box;
+      &:hover{
+         background-color: rgb(186, 186, 186);
+      }
+   }
+}
+
+.about-dji{
+   font-family: 'Roboto', sans-serif;
+   background-color: #222224;
+   &__container{
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+      padding: 50px 0 0 0;
+   }
+   &__text{
+      width: 35%;
+      min-width: 500px;
+   }
+   &__title{
+      font-weight: 700;
+		font-size: 42px;
+		color: #FFFFFF;
+		line-height: 120%;
+      padding: 0 0 50px 0;
+   }
+   &__subtitle{   
+      font-size: 18px;
+      line-height: 29px;
+      color: #FFFFFF;
+   }
+   &__img{
+      width: 50%;
+      background: url('/img/mainPage/about-dji/item-1.jpg') center/cover  no-repeat;
+   }
+}
+
+@media screen and (max-width: 1000px){
+   .benefits{
+      grid-template-columns: repeat(2, 260px);
+      grid-template-rows: repeat(3, 200px);
+   }
+   .about-dji{
+      &__container{
+         width: 90%;
+         padding: 50px 0 0 0;
+      }
+      &__text{
+         width: 45%;
+         min-width: 0;
+      }
+      &__title{
+         font-size: 32px;
+      }
+      &__subtitle{   
+         font-size: 16px;
+      }
+      &__img{
+         width: 45%;
+      }
+   }
+}
+
+@media screen and (max-width: 800px){
+   .catalog{
+      &__items{
+         width: 90%;
+         display: flex;
+         flex-direction: column;
+      }
+      &__item_1{
+         background-size: cover;
+         margin: 0 0 30px 0;
+         box-shadow: 0 0 10px #696969;
+      }
+      &__item_2{
+         background-size: cover;
+         margin: 0 0 30px 0;
+         box-shadow: 0 0 10px #696969;
+      }
+      &__item_3{
+         background-size: cover;
+         box-shadow: 0 0 10px #696969;
+      }
+      &__name{
+         left: 10px;
+         font-size: 30px;
+      }
+   }
+   .top-product{
+      width: 90%;
+      &__title{
+         font-size: 32px;
+      }
+      &__subtitle{
+         font-size: 24px;
+      }
+      &__circle{
+         width: 250px;
+         height: 250px;
+      }
+      &__img{
+         padding: 50px 0 0 0;
+      }
+      img{
+         width: 500px;
+         height: 300px;
+      }
+      &__button{
+         margin: 60px 0 80px 0;
+         width: 300px;
+         height: 50px;
+      }
+   }
+   .about-dji{
+      &__container{
+         display: block;
+      }
+      &__text{
+         width: 100%;
+      }
+      &__title{
+         font-size: 28px;
+         padding: 0 0 20px 0;
+      }
+      &__subtitle{   
+         font-size: 16px;
+      }
+      &__img{
+         margin: 50px 0 0 0;
+         width: 100%;
+         height: 300px;
+      }
+   }
+}
+
+@media screen and (max-width: 660px){
+   .benefits{
+      grid-template-columns: repeat(1, 260px);
+      grid-template-rows: repeat(6, 200px);
+   }
+}
+
+@media screen and (max-width: 500px){
+   .top-product{
+      width: 90%;
+      &__title{
+         font-size: 28px;
+      }
+      &__subtitle{
+         font-size: 22px;
+      }
+      &__circle{
+         width: 200px;
+         height: 200px;
+      }
+      &__img{
+         padding: 50px 0 0 0;
+      }
+      img{
+         width: 350px;
+         height: 250px;
+      }
+   }
+   .intro{
+      // font-family: 'Roboto', sans-serif;
+      // width: 100%;
+      // height: 100vh;
+      // background: url('/img/mainPage/main/bg_intro.jpg') center/cover  no-repeat;
+      &__text{
+         display: none;
+         // position: relative;
+         // top: 22%;
+         // left: 10%;
+         // width: 400px;
+         // display: flex;
+         // flex-direction: column;
+         // justify-content: space-between;
+         &_mobile{
+            font-family: 'Roboto', sans-serif;
+            width: 90%;
+            margin: 0 auto;
+            padding: 70px 0 0 0;
+            display: block;
+            color: #FFFFFF;
+         }
+      }
+      &__title{
+         // font-weight: 700;
+         // font-size: 56px;
+         // color: #FFFFFF;
+         // line-height: 120%;
+         // text-align: left;
+         &_mobile{
+            font-size: 32px;
+            font-weight: 700;
+            padding: 0 0 10px 0;
+         }
+      }
+      &__subtitle{
+         // font-size: 20px;
+         // line-height: 150%;
+         // color: #FFFFFF;
+         // padding: 10px 0 50px 0;
+         &_mobile{
+            font-size: 18px;
+		      padding: 0 0 30px 0;
+         }
+      }
+      &__button{
+         // width: 100%;
+         // height: 70px;
+         // background: #ECECEC;
+         // border-radius: 6px;
+         // color: #000000;
+         // font-size: 20px;
+         // letter-spacing: 1px;
+         // box-sizing: border-box;
+         &_mobile{
+            font-size: 20px;
+            display: block;
+            // margin-top: 30px;
+            height: 50px;
+            width: 100%;
+            background-color: #777777;
+            color: #FFFFFF;
+         }
+      }
+      &__button:hover{
+         // background: #0030DA;
+      }
+   }
+}
+

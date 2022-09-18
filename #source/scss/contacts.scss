@@ -1,0 +1,239 @@
+html{
+   background-color: #222224;
+}
+header{
+   padding: 0 0 80px 0;
+}
+.intro{
+   font-family: 'Roboto', sans-serif;
+   width: 80%;
+   padding: 100px 0 0 0;
+   margin: 0 auto;
+   height: 400px;
+   display: flex;
+   justify-content: center;
+   
+   background: url('/img/contacts/intro.jpg') center/cover  no-repeat;
+	&__text{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+      align-items: center;
+	}
+	&__title{
+      text-align: center;
+		font-weight: 700;
+		font-size: 56px;
+		color: #FFFFFF;
+		line-height: 120%;
+	}
+	&__subtitle{
+      text-align: center;
+		font-size: 20px;
+		line-height: 150%;
+		color: #FFFFFF;
+		margin: 30px 0 50px 0;
+	}
+}
+
+.contacts{
+   padding: 50px 0 0 0;
+   width: 90%;
+   margin: 0 auto;
+   &__items{
+      display: flex;
+      justify-content: space-around;
+   }
+   &__item{
+      width: 300px;
+      text-align: center;
+      img{
+         width: 50px;
+         height: 50px;
+      }
+      .contacts__title{
+         font-size: 16px;
+         line-height: 150%;
+         color: #FFFFFF;
+      }
+   }
+}
+
+.connection{
+	font-family: 'Roboto', sans-serif;
+	width: 55%;
+	margin: 60px auto;
+	text-align: center;
+	&__title{
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+      color: #FFFFFF;
+      line-height: 120%;
+		margin: 0 0 35px 0;
+	}
+	&__subtitle{
+		font-size: 22px;
+		line-height: 120%;
+		color: #ffffff;
+		margin: 0 0 40px 0;
+	}
+	form{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		position: relative;
+		textarea{
+			resize: none;
+		}
+	}
+	form::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(55, 55, 55, 0.9) url(../../../img/preloader3.gif) center / 120px no-repeat;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.8s ease 0s;
+	}
+	form._sending::after{
+		opacity: 1;
+		visibility: visible;
+	}
+	._req._error{
+		box-shadow: 0 0 10px red;
+	}
+	.fakeinput._error{
+		box-shadow: 0 0 10px red;
+	}
+	&__info{
+		margin: 0 0 40px 0;
+		width: 40%;
+		min-width: 350px;
+		height: 55px;
+	}
+	&__info input{
+		width: 100%;
+		height: 55px;
+		background-color: #E9E9E9;
+		font-size: 16px;
+		padding: 0 0 0 20px;
+	}
+	&__info input:hover{
+		box-shadow: 0 0 10px rgba(214, 214, 214, 0.5);
+	}
+	&__info input:focus{
+		box-shadow: 0 0 5px rgb(234, 234, 234);
+	}
+	&__text{
+		width: 100%;
+		height: 170px;
+	}
+	&__text textarea{
+		width: 100%;
+		height: 100%;
+		background-color: #E9E9E9;
+		padding: 20px 0 0 20px;
+		font-size: 16px;
+	}
+	&__text textarea:hover{
+		box-shadow: 0 0 10px rgba(214, 214, 214, 0.5);
+	}
+	&__text textarea:focus{
+		box-shadow: 0 0 5px rgb(234, 234, 234)
+	}
+	&__submit{
+		margin: 30px 0 0 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	.check__swoosh{
+		display: flex;
+		height: 100%;
+		align-items: center;
+	}
+	.check__swoosh input{
+		display: none;
+	}
+	.fakeinput{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 1px solid #ffffff;
+		position: relative;
+	}
+	.fakeinput::before{
+		content: "";
+		position: absolute;
+		display: block;
+		width: 18px;
+		height: 18px;
+		opacity: 0;
+		// background-color: #0030DA;
+		background: url(/orig.png) 0 0/100% 100% no-repeat;
+		cursor: pointer;
+	}
+
+	.check__swoosh input:checked+.fakeinput::before{
+		opacity: 1;
+	}
+
+	.fakeinput:hover{
+		box-shadow: 0 0 10px rgba(214, 214, 214, 0.5);
+	}
+	.fakeinput:focus{
+		box-shadow: 0 0 5px rgb(234, 234, 234)
+	}
+	.check__text{
+		display: inline;
+		font-size: 16px;
+		color: #FFFFFF;
+		padding: 0 0 0 10px;
+	}
+	.check__button{
+		width: 200px;
+		height: 50px;
+		background-color: #464646;
+		color: #fff;
+		font-size: 16px;
+		border-radius: 3px;
+	}
+	.check__button:hover{
+		background: #939393;
+	}
+}
+
+@media screen and (max-width: 1300px){
+	.connection{
+		width: 90%;
+	}
+   .intro{
+      width: 90%;
+      background: url('/img/contacts/intro.jpg') center/cover  no-repeat;
+      &__title{
+         font-size: 46px;
+      }
+   }
+   .contacts{
+      &__items{
+         display: flex;
+         justify-content: space-around;
+      }
+   }
+}
+
+
+@media screen and (max-width: 850px){
+	.connection{
+		width: 90%;
+		&__info{
+			width: 100%;
+			min-width: 0;
+		}
+	}
+}
