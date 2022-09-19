@@ -30,6 +30,7 @@ body {
 }
 
 .faq-page {
+  font-weight: 900;
   color: #FFFFFF;
   cursor: pointer;
   padding: 30px 20px;

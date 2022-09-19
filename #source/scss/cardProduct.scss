@@ -10,7 +10,7 @@ html{
    &__title{
       font-size: 32px;
       font-weight: 700;
-      padding: 30px 0;
+      padding: 60px 0 30px 0;
    }
    &__about{
       display: flex;
@@ -167,8 +167,8 @@ html{
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	color: white;
-	background-color: #5E81FF;
+	color: black;
+	background-color: #FFFFFF;
 	display: flex;
 	cursor: pointer;
 	position: absolute;
@@ -177,7 +177,7 @@ html{
    z-index: 2;
 }
 .arrow:hover{
-	background-color: #0030DA;
+	background-color: #c5c5c5;
 }
 .arrow div{
 	margin: auto;
@@ -274,12 +274,12 @@ html{
 						font-weight: 700;
 						font-size: 20px;
 						line-height: 120%;
-						color: #365EEC;
+						color: #cccccc;
 					}
 					.card__button{
 						width: 100px;
 						height: 40px;
-						background: #365EEC;
+						background: #cccccc;
 						border-radius: 5px;
 						color: #FFFFFF;
 						display: flex;

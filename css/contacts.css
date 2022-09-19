@@ -1,5 +1,6 @@
 html {
   background-color: #222224;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -7,7 +8,6 @@ header {
 }
 
 .intro {
-  font-family: "Roboto", sans-serif;
   width: 80%;
   padding: 100px 0 0 0;
   margin: 0 auto;
@@ -18,7 +18,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url("/img/contacts/intro.jpg") center/cover no-repeat;
+  background: url("../img/contacts/intro.jpg") center/cover no-repeat;
 }
 .intro__text {
   display: -webkit-box;
@@ -71,6 +71,7 @@ header {
   height: 50px;
 }
 .contacts__item .contacts__title {
+  margin: 15px 0 0 0;
   font-size: 16px;
   line-height: 150%;
   color: #FFFFFF;
@@ -250,7 +251,6 @@ header {
 
   .intro {
     width: 90%;
-    background: url("/img/contacts/intro.jpg") center/cover no-repeat;
   }
   .intro__title {
     font-size: 46px;
